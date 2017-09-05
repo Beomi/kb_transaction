@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='kb_transaction',
-      version='0.0.2',
+      version='0.0.3',
       url='https://github.com/beomi/kb-transaction',
       license='MIT',
       author='Junbum Lee',
@@ -12,5 +12,5 @@ setup(name='kb_transaction',
       zip_safe=False,
       setup_requires=['python-dateutil', 'beautifulsoup4', 'selenium'],
       install_requires=['python-dateutil', 'beautifulsoup4', 'selenium'],
-      download_url='https://github.com/beomi/kb_transaction/archive/0.0.2.tar.gz',
+      download_url='https://github.com/beomi/kb_transaction/archive/0.0.3.tar.gz',
       )
