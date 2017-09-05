@@ -20,11 +20,11 @@ def _get_transactions(driver, bank, pw, birthday):
     return transactions
 
 
-def get_balance(bank, pw, birthday):
+def get_balance(PATH, bank, pw, birthday):
     # Developers TODO: Ie('') 안의 위치를 IEDriverServer.exe의 위치로 바꾸어주세요.
     # IE드라이버는 32bit버전을 받아 사용하세요. http://docs.seleniumhq.org/download/
     # 64bit 버전은 "매우매우" 느립니다.
-    driver = webdriver.Ie('C:\\Users\\Administrator\\Desktop\\IEDriverServer_32.exe')
+    driver = webdriver.Ie(PATH)
     transactions = _get_transactions(driver, bank, pw, birthday)
     transaction_list = []
     detail = {}

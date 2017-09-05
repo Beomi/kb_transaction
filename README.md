@@ -36,11 +36,22 @@ Selenium을 구동할 때 이 서버는 항상 켜져있어야 합니다.(IE라�
 ```python
 from kb_transaction.crawler import get_balance
 
-transaction_list = get_balance('계좌번호', '계좌 비밀번호4자리', '생년월일6자리')
+PATH = 'C:\\Users\\Administrator\\Desktop\\IEDriverServer.exe'
+transaction_list = get_balance(PATH, '계좌번호', '계좌 비밀번호4자리', '생년월일6자리')
 
 for t in transaction_list:
     print(t)
 ```
+
+위에서 받은 `IEDriverServer.exe`의 위치(절대경로)를 첫 인자로 하고 계좌번호와 비밀번호, 생년월일 6자리를 입력하면 아래와 같은 dict로 이루어진 list가 나옵니다.
+
+> 유의: 경로 입력시 `\`는 `\\`로 입력해주셔야 제대로 escaping이 됩니다.
+
+```json
+[{'date': datetime.datetime(2017, 9, 5, 18, 3, 52), 'amount': -1250, 'balance': 114645, 'transaction_by': 'KB카드출금'}, ...]
+```
+
+date는 datetime 객체, amount는 입금이면 +int, 출금이면 -int, balance는 현재 계좌 잔고 int, transaction_by는 은행에 찍히는 거래소(입금자명 등)입니다.
 
 ## 발전계획
 
