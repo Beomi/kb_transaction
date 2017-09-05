@@ -10,6 +10,6 @@ setup(name='kb_transaction',
       packages=find_packages(),
       long_description=open('README.md').read(),
       zip_safe=False,
-      setup_requires=['python-dateutil>=2.6.1', 'beautifulsoup4>=4.6.0', 'selenium>=3.5.0'],
+      setup_requires=['python-dateutil', 'beautifulsoup4', 'selenium'],
       download_url='https://github.com/beomi/kb_transaction/archive/0.0.1.tar.gz',
       )
