@@ -33,6 +33,11 @@ Selenium을 구동할 때 이 서버는 항상 켜져있어야 합니다.(IE라�
 
 ## 사용법
 
-```
-from kb import
+```python
+from kb_transaction.crawler import get_balance
+
+transaction_list = get_balance('계좌번호', '계좌 비밀번호4자리', '생년월일6자리')
+
+for t in transaction_list:
+    print(t)
 ```
