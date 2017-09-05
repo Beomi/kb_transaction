@@ -11,5 +11,6 @@ setup(name='kb_transaction',
       long_description=open('README.md').read(),
       zip_safe=False,
       setup_requires=['python-dateutil', 'beautifulsoup4', 'selenium'],
+      install_requires=['python-dateutil', 'beautifulsoup4', 'selenium'],
       download_url='https://github.com/beomi/kb_transaction/archive/0.0.2.tar.gz',
       )
