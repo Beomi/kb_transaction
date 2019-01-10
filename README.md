@@ -1,3 +1,14 @@
+# Update @ 2019.01.10
+
+현재 프로젝트는 [simple_bank_korea](https://github.com/Beomi/simple_bank_korea) 프로젝트로 이전되었습니다.
+(더 많은 기능과 캐시기능, 그리고 속도향상이 이루어진 버전입니다.)
+
+---
+
+# THIS REPOSITORY IS DEPRECATED!! GO TO https://github.com/Beomi/simple_bank_korea
+
+---
+
 # KB 국민은행 계좌 조회
 
 ## 왜 만들었나요?
